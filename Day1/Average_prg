@@ -1,0 +1,17 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Average {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Input 1st Number");
+        int a= sc.nextInt();
+        System.out.println("Input 2nd Number");
+        int b= sc.nextInt();
+        System.out.println("Input 3rd Number");
+        int c= sc.nextInt();
+        float avg=(a+b+c)/3f;
+        System.out.println(avg);
+    }
+}
