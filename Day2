@@ -1,0 +1,18 @@
+//Pragram to find Gross Salary in java
+import java.util.Scanner;
+public class GrossSalary {
+        public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+
+            System.out.print("Enter the basic salary: ");
+            double basicSalary = sc.nextDouble();
+
+            double da = (10.0 / 100) * basicSalary; // Calculate Dearness Allowance (10% of basic salary)
+            double hra = (8.0 / 100) * basicSalary; // Calculate House Rent Allowance (8% of basic salary)
+            double ta = (5.0 / 100) * basicSalary; // Calculate Travel Allowance (5% of basic salary)
+
+            double grossSalary = basicSalary + da + hra + ta; // Calculate Gross Salary
+
+            System.out.println("Gross Salary: " + grossSalary);
+        }
+    }
