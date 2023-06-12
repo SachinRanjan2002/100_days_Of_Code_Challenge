@@ -1,0 +1,20 @@
+//Convert CORRESPONDING CHARACTER OF GIVEN UNICODE.
+
+import java.util.Scanner;
+
+class UnicodeVal{
+  void unicode(){
+      Scanner sc=new Scanner(System.in);
+      System.out.print("Input any value to show Unicode: ");
+      int u= sc.nextInt();
+      char character = (char) u;
+      System.out.println("The corresponding character of Unicode " + u+ " is: " + character);
+  }
+   }
+public class Unicode {
+    public static void main(String[] args) {
+        UnicodeVal obj=new UnicodeVal();
+        obj.unicode();
+
+    }
+}
