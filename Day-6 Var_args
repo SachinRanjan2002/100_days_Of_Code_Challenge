@@ -1,0 +1,17 @@
+//Var:args
+class Sum{
+    int sum(int ...arr){
+        int r=0;
+        for(int a:arr){
+            r+=a;
+        }
+        return r;
+    }
+}
+public class Var_args {
+    public static void main(String[] args) {
+        Sum s=new Sum();
+        System.out.println("The sum of given digit is: "+s.sum(90,21,92,10,12,11));
+
+    }
+}
