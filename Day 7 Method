@@ -1,0 +1,35 @@
+
+//Calling method from another class
+package com.company;
+
+import com.sun.security.jgss.GSSUtil;
+
+import java.util.Scanner;
+
+class Demo11{
+    public static void sum(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Input 1st number");
+        int a= sc.nextInt();
+        System.out.println("Input 2nd number");
+        int b=sc.nextInt();
+        int sum=a+b;
+        System.out.println("The Sum of two number is: "+sum);
+    }
+    public final void multiply(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Input 1st number");
+        int a= sc.nextInt();
+        System.out.println("Input 2nd number");
+        int b=sc.nextInt();
+        int mul=a*b;
+        System.out.println("The multiply of two number is: "+mul);
+    }
+}
+public class Method {
+    public static void main(String[] args) {
+        Demo11 d=new Demo11();
+        Demo11.sum();
+        d.multiply();
+    }
+}
