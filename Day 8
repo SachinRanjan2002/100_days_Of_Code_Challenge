@@ -1,0 +1,36 @@
+Check Even or Odd number and store in an array and print it.
+
+
+package com.company.S2;
+
+import java.util.Scanner;
+
+public class even_for_each {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int arr[]=new int[10];
+//       System.out.println("Input limit");
+//        int limit=sc.nextInt();
+        for(int i=0;i< arr.length;i++){
+            System.out.println("Input Number");
+            arr[i]=sc.nextInt();
+        }
+        System.out.println("All Numbers in Array:-\t");
+        for(int num:arr){
+            System.out.print("\t"+num);
+        }
+        System.out.println("\nAll Even Numbers in Array:-\n ");
+        for(int eve:arr){
+            if(eve%2==0){
+                System.out.print("\t"+eve);
+            }
+        }
+        System.out.println("\nAll odd number in array");
+        for(int odd:arr){
+            if(odd%2!=0){
+                System.out.print(odd);
+            }
+        }
+
+    }
+}
